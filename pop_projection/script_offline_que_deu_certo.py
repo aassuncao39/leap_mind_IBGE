@@ -3,13 +3,7 @@ import os
 import math
 import requests
 from datetime import datetime
-from flask import Flask
-from flask_restful import Api, Resource
 
-
-#create API
-app = Flask(__name__)
-api = Api(app)
 
 
 
@@ -41,7 +35,7 @@ future_date=datetime(year, month, day)
 diff_between_dates=(future_date-datetime_object)
 
 seconds_difference=(diff_between_dates.days*86400)+diff_between_dates.seconds
-print("A diferenÁa de tempo entre datas e equivalente a " + str(seconds_difference) + " segundos...")
+print("A diferen√ßa de tempo entre datas e equivalente a " + str(seconds_difference) + " segundos...")
 
 population_increase=math.floor(float((seconds_difference/(float(population_increment)/1000))))
 
@@ -66,14 +60,14 @@ query_year = datetime_object.strftime('%Y')
 date=str(query_day) + "/" + str(query_month) + "/" + str(query_year)
 
 
-print("No dia de hoje, " + date + ", a populaÁ„o brasileira È equivalente a " + pop1 + " habitantes. Com um incremento populacional previsto de " + str(float(population_increment)/1000) + " habitantes/segundo, para a data de " + str(day) + "/" + str(month) + "/" + str(year) + " espera-se uma populaÁ„o equivalente a " + str(pop2) + " habitantes") 
+print("No dia de hoje, " + date + ", a popula√ß√£o brasileira √© equivalente a " + pop1 + " habitantes. Com um incremento populacional previsto de " + str(float(population_increment)/1000) + " habitantes/segundo, para a data de " + str(day) + "/" + str(month) + "/" + str(year) + " espera-se uma popula√ß√£o equivalente a " + str(pop2) + " habitantes") 
 
 #write to TXT file
 
-txt=("[log: " + str(datetime_object) + "] -> No dia de hoje, " + date + ", a populaÁ„o brasileira È equivalente a " + pop1 +
+txt=("[log: " + str(datetime_object) + "] -> No dia de hoje, " + date + ", a popula√ß√£o brasileira √© equivalente a " + pop1 +
      " habitantes. Com um incremento populacional previsto de " +
      str(float(population_increment)/1000) + " habitantes/segundo, para a data de " + str(day) + "/" + str(month) + "/" + str(year) +
-     " espera-se uma populaÁ„o equivalente a " + str(pop2) + " habitantes.")
+     " espera-se uma popula√ß√£o equivalente a " + str(pop2) + " habitantes.")
 
 
 with open('output.txt', 'r+') as json_file:
