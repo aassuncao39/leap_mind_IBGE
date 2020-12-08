@@ -1,3 +1,5 @@
+#Após instalar os modulos e deixar um arquivo denominado output.txt na pasta relativa deste arquivo, o mesmo deve rodar sem problemas pelo Python Shell, retornarndo a expectativa da projeçao populacional do Brasil para qualquer data
+
 import json
 import os
 import math
