@@ -1,0 +1,1 @@
+[log: 2020-12-07 14:14:34] -> No dia de hoje, 07/12/2020, a população brasileira é equivalente a 212,405,525 habitantes. Com um incremento populacional previsto de 20.206 habitantes/segundo, para a data de 5/1/2022 espera-se uma população equivalente a 214,087,714 habitantes.
